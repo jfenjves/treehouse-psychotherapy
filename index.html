@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Treehouse Psychotherapy | Jessica Fenjves</title>
+
+  <meta
+    name="description"
+    content="Psychotherapy with Jessica Fenjves in a peaceful woodland setting and virtually."
+  >
+
+  <style>
+    /* COLORS */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lora:wght@400;500;600&display=swap');
+    :root {
+      --forest: #344a3d;
+      --sage: #a6b3a0;
+      --sand: #e6ddcf;
+      --linen: #f8f5ef;
+      --bark: #766253;
+    }
+
+    /* GENERAL PAGE STYLING */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--linen);
+      color: var(--forest);
+      font-family: "Lora", serif;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    h1, h2, .brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+nav, .button {
+  font-family: 'Lora', serif;
+}
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 7%;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .brand {
+  color: #344A3D;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  font-weight: 400;
+  text-decoration: none;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 5px;
+      font-family: 'Lora', serif;
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      opacity: 0.65;
+    }
+
+    /* HOMEPAGE */
+
+    .home {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 65px 7% 80px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero-text {
+      max-width: 440px;
+    }
+
+    h1, h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: normal;
+      line-height: 1.35;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 24px;
+    }
+
+    .hero-text p {
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 20px;
+      border: 1px solid var(--forest);
+      font-size: 13px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .button:hover {
+      background: var(--forest);
+      color: var(--linen);
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 420px;
+     object-fit: contain;
+    }
+
+    /* INTRODUCTION */
+
+    .introduction {
+      max-width: 650px;
+      margin: 100px auto 0;
+      text-align: center;
+    }
+
+    .introduction h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      margin-top: 100px;
+      padding: 25px 7%;
+      border-top: 1px solid var(--sand);
+      display: flex;
+      justify-content: space-between;
+      color: var(--bark);
+      font-size: 12px;
+    }
+
+    /* MOBILE LAYOUT */
+
+    @media (max-width: 760px) {
+      header {
+        flex-direction: column;
+        gap: 22px;
+        padding: 24px 5%;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .home {
+        padding: 40px 6% 50px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .hero-image {
+        height: 300px;
+      }
+
+      .introduction {
+        margin-top: 65px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 60px;
+      }
+    }
+.tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  color: #766253;
+  margin-top: 8px;
+  margin-bottom: 34px;
+  letter-spacing: 0.3px;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header>
+    <a href="index.html" class="brand">Treehouse Psychotherapy</a>
+
+    <nav aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="fees.html">Fees & Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOMEPAGE -->
+
+  <main class="home">
+
+    <section class="hero">
+
+      <div class="hero-text">
+        <h1>Treehouse Psychotherapy</h1>
+<p class="tagline">A space to listen inward</p>
+        <p>
+          Psychotherapy grounded in curiosity, compassion,
+          and a deeper understanding of ourselves.
+        </p>
+
+        <a href="fees.html" class="button">
+          Request an initial consultation
+        </a>
+      </div>
+
+     
+<img
+ class="hero-image"
+src="images/homepage-photo.webp"
+alt="Warm sunlight filtering through the trees"
+/>
+
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <span>Treehouse Psychotherapy · Jessica Fenjves</span>
+    <span>Psychotherapy in person and virtually</span>
+  </footer>
+
+</body>
+</html>

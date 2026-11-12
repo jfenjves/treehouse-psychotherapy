@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fees & Contact | Treehouse Psychotherapy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #F8F5EF;
+      color: #766253;
+      font-family: 'Lora', serif;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 35px 40px 25px;
+    }
+
+    .brand {
+      color: #344A3D;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 27px;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #E6DDCF;
+    }
+
+    nav a {
+      color: #766253;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #344A3D;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 65px auto 100px;
+      padding: 0 40px;
+    }
+
+    h1, h2 {
+      color: #344A3D;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.15;
+      margin: 0 0 35px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-top: 48px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 0 0 22px;
+    }
+
+    footer {
+      border-top: 1px solid #E6DDCF;
+      padding: 25px 40px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 25px 22px;
+      }
+
+      nav {
+        gap: 18px;
+      }
+
+      main {
+        margin-top: 40px;
+        padding: 0 24px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+    }
+    .contact-form {
+      display: grid;
+      gap: 10px;
+      max-width: 600px;
+      margin-top: 28px;
+    }
+
+    .contact-form label { color: #344A3D; font-weight: 600; }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #B9AA9B;
+      border-radius: 2px;
+      background: #FFFCF8;
+      color: #344A3D;
+      font: inherit;
+    }
+
+    .contact-form textarea { min-height: 150px; resize: vertical; }
+
+    .contact-form button {
+      justify-self: start;
+      margin-top: 10px;
+      padding: 12px 22px;
+      border: 1px solid #344A3D;
+      background: #344A3D;
+      color: #F8F5EF;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover { background: #766253; }
+    .form-note { margin-top: 12px; font-size: 13px; }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="brand" href="index.html">Treehouse Psychotherapy</a>
+
+    <nav>
+      <a href="about.html">About</a>
+      <a href="fees.html">Fees & Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Fees & Contact</h1>
+
+    <h2>Fees</h2>
+
+    <p>
+      I offer sliding-scale fees ranging from $125 to $175 per session.
+    </p>
+
+
+
+    <p>
+      I do not accept insurance. Upon request, I can provide a superbill
+      that you may submit to your insurance company for possible
+      out-of-network reimbursement. Reimbursement depends on your
+      individual insurance plan.
+    </p>
+
+    <h2>Contact</h2>
+
+    <p>
+      Please get in touch to inquire about therapy or request an
+      initial consultation.
+    </p>
+
+    <form class="contact-form" action="mailto:jfenjves@gmail.com" method="post" enctype="text/plain">
+      <label for="contact-name">Your name</label>
+      <input id="contact-name" name="Name" type="text" autocomplete="name" required>
+
+      <label for="contact-email">Your email</label>
+      <input id="contact-email" name="Email" type="email" autocomplete="email" required>
+
+      <label for="contact-message">How can I help?</label>
+      <textarea id="contact-message" name="Message" rows="6" required></textarea>
+
+      <button type="submit">Send message</button>
+    </form>
+    <p class="form-note">Submitting opens your email app with the message ready to send.</p>
+
+  </main>
+
+  <footer>
+    Treehouse Psychotherapy
+  </footer>
+
+</body>
+</html>
