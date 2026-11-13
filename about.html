@@ -1,174 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>About Jessica | Treehouse Psychotherapy</title>
+
+  <meta
+    name="description"
+    content="As a mental health counselor, I work collaboratively with individuals to understand and ease painful patterns that may leave them feeling stuck or disconnected from themselves and others."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Treehouse Psychotherapy">
+  <meta property="og:title" content="About Jessica | Treehouse Psychotherapy">
+  <meta property="og:description" content="As a mental health counselor, I work collaboratively with individuals to understand and ease painful patterns that may leave them feeling stuck or disconnected from themselves and others.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Lora:wght@400;600&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: #F8F5EF;
-      color: #766253;
-      font-family: 'Lora', serif;
-      font-size: 15px;
-      line-height: 1.9;
-    }
-
-    header {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 35px 40px 25px;
-    }
-
-    .brand {
-      color: #344A3D;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 27px;
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      gap: 32px;
-      flex-wrap: wrap;
-      margin-top: 22px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #E6DDCF;
-    }
-
-    nav a {
-      color: #766253;
-      font-size: 16px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #344A3D;
-    }
-
-    main {
-      max-width: 850px;
-      margin: 65px auto 100px;
-      padding: 0 40px;
-    }
-
-    h1 {
-      color: #344A3D;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 52px;
-      font-weight: 400;
-      line-height: 1.15;
-      margin: 0 0 35px;
-    }
-
-    h2 {
-      color: #344A3D;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 30px;
-      font-weight: 400;
-      margin-top: 42px;
-      margin-bottom: 12px;
-    }
-
-    p {
-      margin: 0 0 22px;
-    }
-
-    footer {
-      border-top: 1px solid #E6DDCF;
-      padding: 25px 40px;
-      text-align: center;
-      font-size: 12px;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        padding: 25px 22px;
-      }
-
-      nav {
-        gap: 18px;
-      }
-
-      main {
-        margin-top: 40px;
-        padding: 0 24px;
-      }
-
-      h1 {
-        font-size: 42px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <header>
-    <a class="brand" href="index.html">Treehouse Psychotherapy</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <nav>
-      <a href="about.html">About</a>
-      <a href="fees.html">Fees & Contact</a>
-    </nav>
+  <!-- NAVIGATION -->
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">Treehouse Psychotherapy</a>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="fees.html">Fees &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>About Jessica Fenjves, MHC-LP</h1>
+  <!-- ABOUT -->
 
-    <p>
-      As a mental health counselor, I work collaboratively with individuals
-      to understand and ease painful patterns that may leave them feeling
-      stuck or disconnected from themselves and others. My approach is
-      psychodynamic and relational, grounded in compassion, curiosity,
-      and a nonjudgmental regard for each person's experience. I draw upon
-      mindfulness and somatic practices when appropriate, supporting
-      greater awareness of the connections between mind and body. Through
-      honest self-reflection and an exploration of the underlying sources
-      of distress, I aim to help clients develop a deeper understanding
-      of themselves, discover new perspectives, and experience greater
-      freedom in how they relate to themselves and the world around them.
-    </p>
+  <main id="main" class="container">
+    <div class="about">
+      <h1 class="about-title">About Jessica Fenjves, <span class="nowrap">MHC-LP</span></h1>
 
-   
+      <img
+        class="portrait"
+        src="images/jess-pic-600.webp"
+        srcset="images/jess-pic-600.webp 600w, images/jess-pic-1000.webp 1000w"
+        sizes="(min-width: 60rem) 20rem, (min-width: 30rem) 22rem, 100vw"
+        width="600"
+        height="750"
+        alt="Jessica Fenjves, smiling, seated outdoors in front of a rhododendron"
+      >
 
-    <p>
-      I hold a master's degree in Mental Health Counseling from the City
-      University of New York and a master's degree in Art Education from
-      Columbia University's Teachers College. I work with children,
-      adolescents, and adults, bringing a creative and integrative
-      perspective to my clinical work. My background in teaching and
-      education informs my understanding that each person has a unique
-      way of learning, growing, and coming to know themselves.
-    </p>
+      <div class="about-text prose">
+        <p>
+          As a mental health counselor, I work collaboratively with individuals
+          to understand and ease painful patterns that may leave them feeling
+          stuck or disconnected from themselves and others. My approach is
+          psychodynamic and relational, grounded in compassion, curiosity,
+          and a nonjudgmental regard for each person's experience. I draw upon
+          mindfulness and somatic practices when appropriate, supporting
+          greater awareness of the connections between mind and body. Through
+          honest self-reflection and an exploration of the underlying sources
+          of distress, I aim to help clients develop a deeper understanding
+          of themselves, discover new perspectives, and experience greater
+          freedom in how they relate to themselves and the world around them.
+        </p>
 
-    
+        <p>
+          I hold a master's degree in Mental Health Counseling from the City
+          University of New York and a master's degree in Art Education from
+          Columbia University's Teachers College. I work with children,
+          adolescents, and adults, bringing a creative and integrative
+          perspective to my clinical work. My background in teaching and
+          education informs my understanding that each person has a unique
+          way of learning, growing, and coming to know themselves.
+        </p>
 
-    <p>
-      I am particularly interested in the inner life: dreams, fantasies,
-      and the associative pathways the mind follows when it is free to
-      wander. I value the process of becoming curious about our inner
-      worlds and the ways we relate to others. My aim is to offer a
-      thoughtful, supportive space where questions are welcomed,
-      self-understanding can deepen, and new ways of seeing oneself
-      and one's experiences can emerge. 
-    </p>
+        <p>
+          I am particularly interested in the inner life: dreams, fantasies,
+          and the associative pathways the mind follows when it is free to
+          wander. I value the process of becoming curious about our inner
+          worlds and the ways we relate to others. My aim is to offer a
+          thoughtful, supportive space where questions are welcomed,
+          self-understanding can deepen, and new ways of seeing oneself
+          and one's experiences can emerge.
+        </p>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    Treehouse Psychotherapy
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>Treehouse Psychotherapy · Jessica Fenjves</span>
+      <span>Psychotherapy in person and virtually</span>
+    </div>
   </footer>
 
 </body>
