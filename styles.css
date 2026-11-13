@@ -6,6 +6,7 @@
   --sand: #e6ddcf;
   --linen: #f8f5ef;
   --bark: #766253;
+  --bark-deep: #5e4c3f;
   --paper: #fffcf8;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
@@ -170,10 +171,23 @@ main {
 
 /* HOMEPAGE */
 
+.home {
+  padding: 0;
+}
+
 .hero {
   display: grid;
-  gap: 2.5rem;
-  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: 60% center;
+}
+
+.hero-overlay {
+  padding-block: 2.5rem 3.5rem;
 }
 
 .tagline {
@@ -188,25 +202,58 @@ main {
   margin-bottom: 2rem;
 }
 
-.hero-image {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: 70% 30%;
-}
-
-@media (min-width: 48rem) {
-  .hero {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-
-  .hero-text {
-    max-width: 28rem;
+/* Wide screens: text sits over the painting, on a linen wash that fades out to the right */
+@media (min-width: 60rem) {
+  .hero > * {
+    grid-area: 1 / 1;
   }
 
   .hero-image {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: auto;
+    height: min(88vh, 56.25vw);
+    min-height: 34rem;
+  }
+
+  .hero-overlay {
+    display: flex;
+    align-items: center;
+    padding-block: 3rem;
+    background: linear-gradient(
+      to right,
+      rgb(248 245 239 / 0.85) 0%,
+      rgb(248 245 239 / 0.7) 32%,
+      rgb(248 245 239 / 0.25) 50%,
+      rgb(248 245 239 / 0) 62%
+    );
+  }
+
+  .hero-overlay .container {
+    width: 100%;
+  }
+
+  .hero .tagline {
+    color: var(--bark-deep);
+  }
+
+  .hero-text {
+    position: relative;
+    isolation: isolate;
+    max-width: 28rem;
+  }
+
+  /* Soft, feathered glow behind the words so busy branches never compete with the text */
+  .hero-text::before {
+    content: "";
+    position: absolute;
+    inset: -6rem -10rem;
+    z-index: -1;
+    background: radial-gradient(
+      closest-side,
+      rgb(248 245 239 / 0.78),
+      rgb(248 245 239 / 0.66) 45%,
+      rgb(248 245 239 / 0.25) 75%,
+      rgb(248 245 239 / 0)
+    );
   }
 }
 
