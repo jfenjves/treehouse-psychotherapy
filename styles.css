@@ -217,18 +217,32 @@ main {
   gap: 0 4rem;
 }
 
-.portrait {
+.portrait,
+.place-photo {
   width: 100%;
   max-width: 22rem;
+}
+
+.portrait {
   margin-bottom: 2.5rem;
 }
 
+.place-photo {
+  margin-top: 1rem;
+}
+
+/* Photos stack in the right column; the last 1fr row soaks up the
+   text's extra height so the treehouse photo stays snug under the portrait */
 @media (min-width: 60rem) {
   .about {
     grid-template-columns: minmax(0, var(--measure)) 20rem;
+    grid-template-rows: auto auto auto 1fr;
     grid-template-areas:
-      "title photo"
-      "text  photo";
+      "title portrait"
+      "text  portrait"
+      "text  place"
+      "text  .";
+    justify-content: space-between;
     align-items: start;
   }
 
@@ -241,9 +255,15 @@ main {
   }
 
   .portrait {
-    grid-area: photo;
+    grid-area: portrait;
     justify-self: end;
     margin-top: 0.75rem;
+  }
+
+  .place-photo {
+    grid-area: place;
+    justify-self: end;
+    margin-top: 0;
   }
 }
 
